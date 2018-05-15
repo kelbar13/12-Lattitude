@@ -2,6 +2,9 @@
 	width: 75%;
 	float: left
 }
+img{
+	width: 25px;
+}
 
 .lattitude{
     font-size: 20px;
@@ -18,7 +21,7 @@
 	font-weight: bold;
 }
 .navbar-custom{
-	background-color: mediumblue;
+	background-color: #428bca;
 
 }
 
@@ -31,11 +34,11 @@
 }
 
 .navbar a:hover{
-    color: darkblue!important;
+    color: #428bca!important;
 }
 
 .custom a:hover{
-	color: darkblue !important;
+	color: #428bca !important;
 }
 
 #image2{
