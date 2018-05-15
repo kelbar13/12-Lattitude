@@ -1,0 +1,57 @@
+#image{
+	width: 75%;
+	float: left
+}
+
+.lattitude{
+    font-size: 20px;
+}
+
+.images{
+	width: 50%;
+	float: left;
+}
+
+.panels{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.navbar a{
+    float: left;
+    display: block;
+    color: black !important;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar a:hover{
+    color: darkblue!important;
+}
+
+.custom a:hover{
+	color: darkblue !important;
+}
+
+#image2{
+	width: 100%;
+}
+
+.highlight{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #428bca; 
+}
+
+.header4{
+	width: 100%;
+	text-align: center;
+}
+
+.images3{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
