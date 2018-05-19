@@ -11,72 +11,74 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-  <nav class="navbar navbar-custom">
-    <div class="container-fluid">
-        <div class="navbar-header navbar-default">
-          <button type="button" class="navbar-toggle collapsed navbar-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+    <div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+		    	<div class="navbar-header">
+		      	<button type="button" class="navbar-toggle collapsed navbar-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+		    	</div>
 
-        <div class="collapse navbar-collapse navbar-default" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-default lattitude">
-              <li><a href="index.html">Lattitude</a></li>
-            </ul>
-          <ul class="nav navbar-nav navbar-right navbar-default">
-              <li class="dropdown navbar-default">
-                <a href="#" class="dropdown-toggle navbar-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                  <ul class="dropdown-menu navbar-default">
-                    <li class="navbar-default custom"><a href="max_temp.html">Latitude vs. Temperature</a></li>
-                    <li class="navbar-default custom"><a href="humidity.html">Latitude vs. Humidity</a></li>
-                    <li class="navbar-default custom"><a href="wind_speed.html">Latitude vs. Wind Speed</a></li>
-                    <li class="navbar-default custom"><a href="cloudiness.html">Latitude vs. Cloudiness</a></li>
-                  </ul>
-              </li>
-              <li><a href="comparisons.html">Comparison</a></li>
-              <li><a href="data.html">Data</a></li>
-            </ul>
-        </div>
-    </div>
-  </nav>
-  <div class="row">
-    <div class="col-md-7">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3>Summary: Latitude vs. X</h3>
-        </div>
-        <div class="panel-body">
-            <img id="image" src="resources/fig3.png" alt="Cloudiness">
-
-          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  Using the OpenWeatherMap API, we collected data from over 500 cities around the world.</p>
-
-          <p>We established a dataset, then used Matplotlib to plot four different characteristics of weather vs.latitude.  
-                      These characteristics include temperature, cloudiness, wind speed, and humidity.  
-                      In this site you will find the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        </div>
+			    <div class="collapse navbar-collapse navbar-default" id="bs-example-navbar-collapse-1">
+			    	<ul class="nav navbar-nav navbar-light lattitude">
+			        	<li><a href="index.html">Lattitude</a></li>
+			      	</ul>
+			    	<ul class="nav navbar-nav navbar-right navbar-default">
+			        	<li class="dropdown navbar-default">
+			        		<a href="#" class="dropdown-toggle navbar-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+			          		<ul class="dropdown-menu navbar-default">
+			            		<li class="navbar-default custom"><a href="max_temp.html">Latitude vs. Temperature</a></li>
+			            		<li class="navbar-default custom"><a href="humidity.html">Latitude vs. Humidity</a></li>
+			            		<li class="navbar-default custom"><a href="wind_speed.html">Latitude vs. Wind Speed</a></li>
+			            		<li class="navbar-default custom"><a href="cloudiness.html">Latitude vs. Cloudiness</a></li>
+			          		</ul>
+			        	</li>
+			        	<li><a href="comparisons.html">Comparison</a></li>
+			        	<li><a href="data.html">Data</a></li>
+			      	</ul>
+			    </div>
+			</div>
+		</nav>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary" style="border-color:midnightblue;">
+      <div class="panel-heading" style="background-color: midnightblue;">
+          <h3>Latitude vs. Cloudiness</h3>
       </div>
-    </div>
-    
-    <div class="col-md-5">
-      <div class="panel panel-primary">
-         <div class="panel-heading">
-            <h3>Visualizations</h3>
-        </div>
+      <div class="panel-body">
+          <img class="image" src="resources/fig3.png" alt="vs. Cloudiness">
 
-        <div class="panel-body">
-            <a href="max_temp.html"><img class="images" src="resources/fig1.png" alt="Temperature"></a>
-          <a href="humidity.html"><img class="images" src="resources/fig2.png" alt="Temperature"></a>
-          <br>
-          <a href="wind_speed.html"><img class="images" src="resources/fig4.png" alt="Temperature"></a>
-          <a href="cloudiness.html"><img class="images" src="resources/fig3.png" alt="Temperature"></a>
-        </div>
+        <p>This plot shows the percentage of cloud cover based on the latitude location of the city analyzed.</p>  
+        <p> There does not seem to be a significant correlation between cloudiness percentage and distance from the equator based on this visualization.
+        </p>
+
+        
       </div>
     </div>
   </div>
+  
+  <div class="col-md-12">
+    <div class="panel panel-primary" style="border-color: midnightblue;">
+       <div class="panel-heading" style="background-color: midnightblue;">
+          <h3>Visualizations</h3>
+      </div>
+
+      <div class="panel-body">
+          <a href="max_temp.html"><img class="images" src="resources/fig1.png" alt="Temperature"></a>
+        <a href="humidity.html"><img class="images" src="resources/fig2.png" alt="Humidity"></a>
+        <br>
+        <a href="wind_speed.html"><img class="images" src="resources/fig4.png" alt="Wind Speed"></a>
+        <a href="cloudiness.html"><img class="images" src="resources/fig3.png" alt="Cloudiness"></a>
+      </div>
+    </div>
   </div>
+</div>
+</div>
 </body>
+
+
 
